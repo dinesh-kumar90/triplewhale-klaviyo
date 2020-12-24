@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Events</title>
+</head>
+<body>
+    <h1>Events</h1>
+    <ul class="list-group">
+        <% events.forEach(function(event) {%>
+            <li>
+                <a href="/event?event_id=<%=event.id%>" class="list-group-item text-dark"><%=event.name%></a>
+            </li>
+        <%});%>
+    </ul>
+</body>
+</html>
