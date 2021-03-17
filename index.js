@@ -13,7 +13,7 @@ app.set('view engine', 'ejs');
 //setup public folder
 app.use(express.static('./public'));
 
-const apiKey = 'pk_0110bd689712c480475e1ef2052060b3da';
+const apiKey = 'API_KEY';
 
 app.get('/', (req, res) => {
     res.render('index')
